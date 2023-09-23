@@ -1,0 +1,19 @@
+#:import MapView kivy_garden.mapview.MapView
+
+
+<ServicesMapView@MapView>:
+
+    lat:34.79
+    lon:48.51
+    zoom:6
+
+    on_zoom:
+        self.zoom=3 if self.zoom<3 else self.zoom
+
+    on_lat:
+        self.start_move()
+
+    on_lon:
+        self.start_move()
+
+

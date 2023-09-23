@@ -1,0 +1,17 @@
+#:include services_mapview.kv
+
+<Style>:
+    orientation:'vertical'
+
+    MDTopAppBar:
+        title: '[color=ffccf]Services Map[/color]'
+        left_action_items:[['information-slab-circle',lambda x:root.show2(), 'About'],['meno',lambda x:root.show_place(),'Search Place']]
+        right_action_items:[['magnify', lambda x:root.searching(),'Search']]
+
+    ServicesMapView:
+        id:srvice_map
+
+
+
+
+
